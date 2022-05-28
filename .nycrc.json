@@ -1,0 +1,20 @@
+{
+  "all": true,
+  "check-coverage": true,
+  "include": [
+    "lib/**/*.js"
+  ],
+  "exclude": [
+    "lib/__tests__/**/*.js"
+  ],
+  "statements": 50,
+  "branches": 50,
+  "functions": 50,
+  "lines": 50,
+  "reporter": [
+    "lcov",
+    "text",
+    "text-summary",
+    "html"
+  ]
+}

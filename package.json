@@ -1,0 +1,42 @@
+{
+  "name": "pg-mocked",
+  "version": "1.0.0",
+  "description": "package to speed up automated tests that rely on node pg for postgresql databases",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "test": "mocha ./lib/__tests__/**/*.test.js",
+    "test:coverage": "nyc npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muratyaman/pg-mocked.git"
+  },
+  "keywords": [
+    "test",
+    "mock",
+    "pg",
+    "postgres",
+    "postgresql"
+  ],
+  "author": "Haci Murat Yaman",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/muratyaman/pg-mocked/issues"
+  },
+  "homepage": "https://github.com/muratyaman/pg-mocked#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.16.0",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "pg": "^8.7.3",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "string-hash": "^1.1.3"
+  },
+  "peerDependencies": {
+    "pg": "^8.7.3"
+  }
+}
